@@ -38,13 +38,13 @@ load(
 )
 
 cargo_build_script(
-    name = "khronos_egl_build_script",
+    name = "proc_macro2_build_script",
     srcs = glob(["**/*.rs"]),
     build_script_env = {
     },
     crate_root = "build.rs",
     data = glob(["**"]),
-    edition = "2015",
+    edition = "2018",
     rustc_flags = [
         "--cap-lints=allow",
     ],
@@ -52,38 +52,40 @@ cargo_build_script(
         "cargo-raze",
         "manual",
     ],
-    version = "4.1.0",
+    version = "1.0.47",
     visibility = ["//visibility:private"],
     deps = [
-        "@remote_no_deps__pkg_config__0_3_26//:pkg_config",
     ],
 )
 
-# Unsupported target "load-minimal" with type "example" omitted
-
-# Unsupported target "wayland-dynamic" with type "example" omitted
-
-# Unsupported target "wayland-static" with type "example" omitted
-
 rust_library(
-    name = "khronos_egl",
+    name = "proc_macro2",
     srcs = glob(["**/*.rs"]),
     crate_root = "src/lib.rs",
     data = [],
-    edition = "2015",
+    edition = "2018",
     rustc_flags = [
         "--cap-lints=allow",
     ],
     tags = [
         "cargo-raze",
-        "crate-name=khronos-egl",
+        "crate-name=proc-macro2",
         "manual",
     ],
-    version = "4.1.0",
+    version = "1.0.47",
     # buildifier: leave-alone
     deps = [
-        ":khronos_egl_build_script",
-        "@remote_no_deps__libc__0_2_137//:libc",
-        "@remote_no_deps__libloading__0_7_3//:libloading",
+        ":proc_macro2_build_script",
+        "@remote_no_deps__unicode_ident__1_0_5//:unicode_ident",
     ],
 )
+
+# Unsupported target "comments" with type "test" omitted
+
+# Unsupported target "features" with type "test" omitted
+
+# Unsupported target "marker" with type "test" omitted
+
+# Unsupported target "test" with type "test" omitted
+
+# Unsupported target "test_fmt" with type "test" omitted

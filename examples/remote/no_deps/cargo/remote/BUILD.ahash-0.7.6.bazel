@@ -160,7 +160,7 @@ rust_library(
             "@rules_rust//rust/platform:x86_64-linux-android",
             "@rules_rust//rust/platform:x86_64-unknown-freebsd",
         ): [
-            "@remote_no_deps__getrandom__0_2_7//:getrandom",
+            "@remote_no_deps__getrandom__0_2_8//:getrandom",
         ],
         "//conditions:default": [],
     }) + selects.with_or({
@@ -188,7 +188,7 @@ rust_library(
             "@rules_rust//rust/platform:x86_64-linux-android",
             "@rules_rust//rust/platform:x86_64-unknown-freebsd",
         ): [
-            "@remote_no_deps__once_cell__1_14_0//:once_cell",
+            "@remote_no_deps__once_cell__1_16_0//:once_cell",
         ],
         "//conditions:default": [],
     }),

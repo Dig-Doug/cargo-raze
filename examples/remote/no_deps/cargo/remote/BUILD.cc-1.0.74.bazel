@@ -31,26 +31,53 @@ licenses([
 
 # Generated Targets
 
-rust_library(
-    name = "core_foundation",
+rust_binary(
+    # Prefix bin name to disambiguate from (probable) collision with lib name
+    # N.B.: The exact form of this is subject to change.
+    name = "cargo_bin_gcc_shim",
     srcs = glob(["**/*.rs"]),
-    crate_root = "src/lib.rs",
+    crate_root = "src/bin/gcc-shim.rs",
     data = [],
-    edition = "2015",
+    edition = "2018",
     rustc_flags = [
         "--cap-lints=allow",
     ],
     tags = [
         "cargo-raze",
-        "crate-name=core-foundation",
+        "crate-name=gcc-shim",
         "manual",
     ],
-    version = "0.9.3",
+    version = "1.0.74",
     # buildifier: leave-alone
     deps = [
-        "@remote_no_deps__core_foundation_sys__0_8_3//:core_foundation_sys",
-        "@remote_no_deps__libc__0_2_137//:libc",
+        ":cc",
     ],
 )
 
-# Unsupported target "use_macro_outside_crate" with type "test" omitted
+rust_library(
+    name = "cc",
+    srcs = glob(["**/*.rs"]),
+    crate_root = "src/lib.rs",
+    data = [],
+    edition = "2018",
+    rustc_flags = [
+        "--cap-lints=allow",
+    ],
+    tags = [
+        "cargo-raze",
+        "crate-name=cc",
+        "manual",
+    ],
+    version = "1.0.74",
+    # buildifier: leave-alone
+    deps = [
+    ],
+)
+
+# Unsupported target "cc_env" with type "test" omitted
+
+# Unsupported target "cflags" with type "test" omitted
+
+# Unsupported target "cxxflags" with type "test" omitted
+
+# Unsupported target "test" with type "test" omitted

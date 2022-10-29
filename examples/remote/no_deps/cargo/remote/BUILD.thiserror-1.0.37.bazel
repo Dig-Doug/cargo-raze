@@ -38,13 +38,13 @@ load(
 )
 
 cargo_build_script(
-    name = "khronos_egl_build_script",
+    name = "thiserror_build_script",
     srcs = glob(["**/*.rs"]),
     build_script_env = {
     },
     crate_root = "build.rs",
     data = glob(["**"]),
-    edition = "2015",
+    edition = "2018",
     rustc_flags = [
         "--cap-lints=allow",
     ],
@@ -52,38 +52,58 @@ cargo_build_script(
         "cargo-raze",
         "manual",
     ],
-    version = "4.1.0",
+    version = "1.0.37",
     visibility = ["//visibility:private"],
     deps = [
-        "@remote_no_deps__pkg_config__0_3_26//:pkg_config",
     ],
 )
 
-# Unsupported target "load-minimal" with type "example" omitted
-
-# Unsupported target "wayland-dynamic" with type "example" omitted
-
-# Unsupported target "wayland-static" with type "example" omitted
-
 rust_library(
-    name = "khronos_egl",
+    name = "thiserror",
     srcs = glob(["**/*.rs"]),
     crate_root = "src/lib.rs",
     data = [],
-    edition = "2015",
+    edition = "2018",
+    proc_macro_deps = [
+        "@remote_no_deps__thiserror_impl__1_0_37//:thiserror_impl",
+    ],
     rustc_flags = [
         "--cap-lints=allow",
     ],
     tags = [
         "cargo-raze",
-        "crate-name=khronos-egl",
+        "crate-name=thiserror",
         "manual",
     ],
-    version = "4.1.0",
+    version = "1.0.37",
     # buildifier: leave-alone
     deps = [
-        ":khronos_egl_build_script",
-        "@remote_no_deps__libc__0_2_137//:libc",
-        "@remote_no_deps__libloading__0_7_3//:libloading",
+        ":thiserror_build_script",
     ],
 )
+
+# Unsupported target "compiletest" with type "test" omitted
+
+# Unsupported target "test_backtrace" with type "test" omitted
+
+# Unsupported target "test_deprecated" with type "test" omitted
+
+# Unsupported target "test_display" with type "test" omitted
+
+# Unsupported target "test_error" with type "test" omitted
+
+# Unsupported target "test_expr" with type "test" omitted
+
+# Unsupported target "test_from" with type "test" omitted
+
+# Unsupported target "test_generics" with type "test" omitted
+
+# Unsupported target "test_lints" with type "test" omitted
+
+# Unsupported target "test_option" with type "test" omitted
+
+# Unsupported target "test_path" with type "test" omitted
+
+# Unsupported target "test_source" with type "test" omitted
+
+# Unsupported target "test_transparent" with type "test" omitted

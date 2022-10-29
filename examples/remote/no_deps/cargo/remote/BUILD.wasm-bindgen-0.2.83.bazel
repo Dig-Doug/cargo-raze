@@ -38,13 +38,13 @@ load(
 )
 
 cargo_build_script(
-    name = "khronos_egl_build_script",
+    name = "wasm_bindgen_build_script",
     srcs = glob(["**/*.rs"]),
     build_script_env = {
     },
     crate_root = "build.rs",
     data = glob(["**"]),
-    edition = "2015",
+    edition = "2018",
     rustc_flags = [
         "--cap-lints=allow",
     ],
@@ -52,38 +52,45 @@ cargo_build_script(
         "cargo-raze",
         "manual",
     ],
-    version = "4.1.0",
+    version = "0.2.83",
     visibility = ["//visibility:private"],
     deps = [
-        "@remote_no_deps__pkg_config__0_3_26//:pkg_config",
     ],
 )
 
-# Unsupported target "load-minimal" with type "example" omitted
-
-# Unsupported target "wayland-dynamic" with type "example" omitted
-
-# Unsupported target "wayland-static" with type "example" omitted
-
 rust_library(
-    name = "khronos_egl",
+    name = "wasm_bindgen",
     srcs = glob(["**/*.rs"]),
     crate_root = "src/lib.rs",
     data = [],
-    edition = "2015",
+    edition = "2018",
+    proc_macro_deps = [
+        "@remote_no_deps__wasm_bindgen_macro__0_2_83//:wasm_bindgen_macro",
+    ],
     rustc_flags = [
         "--cap-lints=allow",
     ],
     tags = [
         "cargo-raze",
-        "crate-name=khronos-egl",
+        "crate-name=wasm-bindgen",
         "manual",
     ],
-    version = "4.1.0",
+    version = "0.2.83",
     # buildifier: leave-alone
     deps = [
-        ":khronos_egl_build_script",
-        "@remote_no_deps__libc__0_2_137//:libc",
-        "@remote_no_deps__libloading__0_7_3//:libloading",
+        ":wasm_bindgen_build_script",
+        "@remote_no_deps__cfg_if__1_0_0//:cfg_if",
     ],
 )
+
+# Unsupported target "headless" with type "test" omitted
+
+# Unsupported target "must_use" with type "test" omitted
+
+# Unsupported target "non_wasm" with type "test" omitted
+
+# Unsupported target "std-crate-no-std-dep" with type "test" omitted
+
+# Unsupported target "unwrap_throw" with type "test" omitted
+
+# Unsupported target "wasm" with type "test" omitted

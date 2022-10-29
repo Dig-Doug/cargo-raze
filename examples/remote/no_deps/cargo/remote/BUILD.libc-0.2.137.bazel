@@ -30,9 +30,36 @@ licenses([
 ])
 
 # Generated Targets
+# buildifier: disable=out-of-order-load
+# buildifier: disable=load-on-top
+load(
+    "@rules_rust//cargo:cargo_build_script.bzl",
+    "cargo_build_script",
+)
+
+cargo_build_script(
+    name = "libc_build_script",
+    srcs = glob(["**/*.rs"]),
+    build_script_env = {
+    },
+    crate_root = "build.rs",
+    data = glob(["**"]),
+    edition = "2015",
+    rustc_flags = [
+        "--cap-lints=allow",
+    ],
+    tags = [
+        "cargo-raze",
+        "manual",
+    ],
+    version = "0.2.137",
+    visibility = ["//visibility:private"],
+    deps = [
+    ],
+)
 
 rust_library(
-    name = "core_foundation",
+    name = "libc",
     srcs = glob(["**/*.rs"]),
     crate_root = "src/lib.rs",
     data = [],
@@ -42,15 +69,14 @@ rust_library(
     ],
     tags = [
         "cargo-raze",
-        "crate-name=core-foundation",
+        "crate-name=libc",
         "manual",
     ],
-    version = "0.9.3",
+    version = "0.2.137",
     # buildifier: leave-alone
     deps = [
-        "@remote_no_deps__core_foundation_sys__0_8_3//:core_foundation_sys",
-        "@remote_no_deps__libc__0_2_137//:libc",
+        ":libc_build_script",
     ],
 )
 
-# Unsupported target "use_macro_outside_crate" with type "test" omitted
+# Unsupported target "const_fn" with type "test" omitted

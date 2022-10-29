@@ -48,6 +48,6 @@ rust_library(
     version = "0.0.6",
     # buildifier: leave-alone
     deps = [
-        "@remote_no_deps__libc__0_2_132//:libc",
+        "@remote_no_deps__libc__0_2_137//:libc",
     ],
 )

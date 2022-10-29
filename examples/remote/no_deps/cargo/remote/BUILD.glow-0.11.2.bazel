@@ -35,7 +35,7 @@ rust_library(
     name = "glow",
     srcs = glob(["**/*.rs"]),
     aliases = {
-        "@remote_no_deps__web_sys__0_3_59//:web_sys": "web_sys",
+        "@remote_no_deps__web_sys__0_3_60//:web_sys": "web_sys",
     },
     crate_root = "src/lib.rs",
     data = [],
@@ -56,10 +56,10 @@ rust_library(
             "@rules_rust//rust/platform:wasm32-unknown-unknown",
             "@rules_rust//rust/platform:wasm32-wasi",
         ): [
-            "@remote_no_deps__js_sys__0_3_59//:js_sys",
+            "@remote_no_deps__js_sys__0_3_60//:js_sys",
             "@remote_no_deps__slotmap__1_0_6//:slotmap",
-            "@remote_no_deps__wasm_bindgen__0_2_82//:wasm_bindgen",
-            "@remote_no_deps__web_sys__0_3_59//:web_sys",
+            "@remote_no_deps__wasm_bindgen__0_2_83//:wasm_bindgen",
+            "@remote_no_deps__web_sys__0_3_60//:web_sys",
         ],
         "//conditions:default": [],
     }),

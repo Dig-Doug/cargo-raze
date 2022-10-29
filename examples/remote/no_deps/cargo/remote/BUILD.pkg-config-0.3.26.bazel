@@ -32,7 +32,7 @@ licenses([
 # Generated Targets
 
 rust_library(
-    name = "core_foundation",
+    name = "pkg_config",
     srcs = glob(["**/*.rs"]),
     crate_root = "src/lib.rs",
     data = [],
@@ -42,15 +42,13 @@ rust_library(
     ],
     tags = [
         "cargo-raze",
-        "crate-name=core-foundation",
+        "crate-name=pkg-config",
         "manual",
     ],
-    version = "0.9.3",
+    version = "0.3.26",
     # buildifier: leave-alone
     deps = [
-        "@remote_no_deps__core_foundation_sys__0_8_3//:core_foundation_sys",
-        "@remote_no_deps__libc__0_2_137//:libc",
     ],
 )
 
-# Unsupported target "use_macro_outside_crate" with type "test" omitted
+# Unsupported target "test" with type "test" omitted

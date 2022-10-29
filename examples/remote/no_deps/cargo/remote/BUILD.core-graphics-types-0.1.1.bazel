@@ -51,6 +51,6 @@ rust_library(
         "@remote_no_deps__bitflags__1_3_2//:bitflags",
         "@remote_no_deps__core_foundation__0_9_3//:core_foundation",
         "@remote_no_deps__foreign_types__0_3_2//:foreign_types",
-        "@remote_no_deps__libc__0_2_132//:libc",
+        "@remote_no_deps__libc__0_2_137//:libc",
     ],
 )

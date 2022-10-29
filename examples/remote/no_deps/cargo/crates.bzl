@@ -94,11 +94,11 @@ def remote_no_deps_fetch_remote_crates():
 
     maybe(
         http_archive,
-        name = "remote_no_deps__bumpalo__3_11_0",
-        url = "https://crates.io/api/v1/crates/bumpalo/3.11.0/download",
+        name = "remote_no_deps__bumpalo__3_11_1",
+        url = "https://crates.io/api/v1/crates/bumpalo/3.11.1/download",
         type = "tar.gz",
-        strip_prefix = "bumpalo-3.11.0",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.bumpalo-3.11.0.bazel"),
+        strip_prefix = "bumpalo-3.11.1",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.bumpalo-3.11.1.bazel"),
     )
 
     maybe(
@@ -112,11 +112,11 @@ def remote_no_deps_fetch_remote_crates():
 
     maybe(
         http_archive,
-        name = "remote_no_deps__cc__1_0_73",
-        url = "https://crates.io/api/v1/crates/cc/1.0.73/download",
+        name = "remote_no_deps__cc__1_0_74",
+        url = "https://crates.io/api/v1/crates/cc/1.0.74/download",
         type = "tar.gz",
-        strip_prefix = "cc-1.0.73",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.cc-1.0.73.bazel"),
+        strip_prefix = "cc-1.0.74",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.cc-1.0.74.bazel"),
     )
 
     maybe(
@@ -229,11 +229,11 @@ def remote_no_deps_fetch_remote_crates():
 
     maybe(
         http_archive,
-        name = "remote_no_deps__getrandom__0_2_7",
-        url = "https://crates.io/api/v1/crates/getrandom/0.2.7/download",
+        name = "remote_no_deps__getrandom__0_2_8",
+        url = "https://crates.io/api/v1/crates/getrandom/0.2.8/download",
         type = "tar.gz",
-        strip_prefix = "getrandom-0.2.7",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.getrandom-0.2.7.bazel"),
+        strip_prefix = "getrandom-0.2.8",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.getrandom-0.2.8.bazel"),
     )
 
     maybe(
@@ -310,20 +310,20 @@ def remote_no_deps_fetch_remote_crates():
 
     maybe(
         http_archive,
-        name = "remote_no_deps__inplace_it__0_3_4",
-        url = "https://crates.io/api/v1/crates/inplace_it/0.3.4/download",
+        name = "remote_no_deps__inplace_it__0_3_5",
+        url = "https://crates.io/api/v1/crates/inplace_it/0.3.5/download",
         type = "tar.gz",
-        strip_prefix = "inplace_it-0.3.4",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.inplace_it-0.3.4.bazel"),
+        strip_prefix = "inplace_it-0.3.5",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.inplace_it-0.3.5.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__js_sys__0_3_59",
-        url = "https://crates.io/api/v1/crates/js-sys/0.3.59/download",
+        name = "remote_no_deps__js_sys__0_3_60",
+        url = "https://crates.io/api/v1/crates/js-sys/0.3.60/download",
         type = "tar.gz",
-        strip_prefix = "js-sys-0.3.59",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.js-sys-0.3.59.bazel"),
+        strip_prefix = "js-sys-0.3.60",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.js-sys-0.3.60.bazel"),
     )
 
     maybe(
@@ -337,11 +337,11 @@ def remote_no_deps_fetch_remote_crates():
 
     maybe(
         http_archive,
-        name = "remote_no_deps__libc__0_2_132",
-        url = "https://crates.io/api/v1/crates/libc/0.2.132/download",
+        name = "remote_no_deps__libc__0_2_137",
+        url = "https://crates.io/api/v1/crates/libc/0.2.137/download",
         type = "tar.gz",
-        strip_prefix = "libc-0.2.132",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.libc-0.2.132.bazel"),
+        strip_prefix = "libc-0.2.137",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.libc-0.2.137.bazel"),
     )
 
     maybe(
@@ -355,11 +355,11 @@ def remote_no_deps_fetch_remote_crates():
 
     maybe(
         http_archive,
-        name = "remote_no_deps__lock_api__0_4_8",
-        url = "https://crates.io/api/v1/crates/lock_api/0.4.8/download",
+        name = "remote_no_deps__lock_api__0_4_9",
+        url = "https://crates.io/api/v1/crates/lock_api/0.4.9/download",
         type = "tar.gz",
-        strip_prefix = "lock_api-0.4.8",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.lock_api-0.4.8.bazel"),
+        strip_prefix = "lock_api-0.4.9",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.lock_api-0.4.9.bazel"),
     )
 
     maybe(
@@ -427,11 +427,11 @@ def remote_no_deps_fetch_remote_crates():
 
     maybe(
         http_archive,
-        name = "remote_no_deps__once_cell__1_14_0",
-        url = "https://crates.io/api/v1/crates/once_cell/1.14.0/download",
+        name = "remote_no_deps__once_cell__1_16_0",
+        url = "https://crates.io/api/v1/crates/once_cell/1.16.0/download",
         type = "tar.gz",
-        strip_prefix = "once_cell-1.14.0",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.once_cell-1.14.0.bazel"),
+        strip_prefix = "once_cell-1.16.0",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.once_cell-1.16.0.bazel"),
     )
 
     maybe(
@@ -445,38 +445,38 @@ def remote_no_deps_fetch_remote_crates():
 
     maybe(
         http_archive,
-        name = "remote_no_deps__parking_lot_core__0_9_3",
-        url = "https://crates.io/api/v1/crates/parking_lot_core/0.9.3/download",
+        name = "remote_no_deps__parking_lot_core__0_9_4",
+        url = "https://crates.io/api/v1/crates/parking_lot_core/0.9.4/download",
         type = "tar.gz",
-        strip_prefix = "parking_lot_core-0.9.3",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.parking_lot_core-0.9.3.bazel"),
+        strip_prefix = "parking_lot_core-0.9.4",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.parking_lot_core-0.9.4.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__pkg_config__0_3_25",
-        url = "https://crates.io/api/v1/crates/pkg-config/0.3.25/download",
+        name = "remote_no_deps__pkg_config__0_3_26",
+        url = "https://crates.io/api/v1/crates/pkg-config/0.3.26/download",
         type = "tar.gz",
-        strip_prefix = "pkg-config-0.3.25",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.pkg-config-0.3.25.bazel"),
+        strip_prefix = "pkg-config-0.3.26",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.pkg-config-0.3.26.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__proc_macro2__1_0_43",
-        url = "https://crates.io/api/v1/crates/proc-macro2/1.0.43/download",
+        name = "remote_no_deps__proc_macro2__1_0_47",
+        url = "https://crates.io/api/v1/crates/proc-macro2/1.0.47/download",
         type = "tar.gz",
-        strip_prefix = "proc-macro2-1.0.43",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.proc-macro2-1.0.43.bazel"),
+        strip_prefix = "proc-macro2-1.0.47",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.proc-macro2-1.0.47.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__profiling__1_0_6",
-        url = "https://crates.io/api/v1/crates/profiling/1.0.6/download",
+        name = "remote_no_deps__profiling__1_0_7",
+        url = "https://crates.io/api/v1/crates/profiling/1.0.7/download",
         type = "tar.gz",
-        strip_prefix = "profiling-1.0.6",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.profiling-1.0.6.bazel"),
+        strip_prefix = "profiling-1.0.7",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.profiling-1.0.7.bazel"),
     )
 
     maybe(
@@ -553,11 +553,11 @@ def remote_no_deps_fetch_remote_crates():
 
     maybe(
         http_archive,
-        name = "remote_no_deps__smallvec__1_9_0",
-        url = "https://crates.io/api/v1/crates/smallvec/1.9.0/download",
+        name = "remote_no_deps__smallvec__1_10_0",
+        url = "https://crates.io/api/v1/crates/smallvec/1.10.0/download",
         type = "tar.gz",
-        strip_prefix = "smallvec-1.9.0",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.smallvec-1.9.0.bazel"),
+        strip_prefix = "smallvec-1.10.0",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.smallvec-1.10.0.bazel"),
     )
 
     maybe(
@@ -571,11 +571,11 @@ def remote_no_deps_fetch_remote_crates():
 
     maybe(
         http_archive,
-        name = "remote_no_deps__syn__1_0_99",
-        url = "https://crates.io/api/v1/crates/syn/1.0.99/download",
+        name = "remote_no_deps__syn__1_0_103",
+        url = "https://crates.io/api/v1/crates/syn/1.0.103/download",
         type = "tar.gz",
-        strip_prefix = "syn-1.0.99",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.syn-1.0.99.bazel"),
+        strip_prefix = "syn-1.0.103",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.syn-1.0.103.bazel"),
     )
 
     maybe(
@@ -589,47 +589,47 @@ def remote_no_deps_fetch_remote_crates():
 
     maybe(
         http_archive,
-        name = "remote_no_deps__thiserror__1_0_34",
-        url = "https://crates.io/api/v1/crates/thiserror/1.0.34/download",
+        name = "remote_no_deps__thiserror__1_0_37",
+        url = "https://crates.io/api/v1/crates/thiserror/1.0.37/download",
         type = "tar.gz",
-        strip_prefix = "thiserror-1.0.34",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.thiserror-1.0.34.bazel"),
+        strip_prefix = "thiserror-1.0.37",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.thiserror-1.0.37.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__thiserror_impl__1_0_34",
-        url = "https://crates.io/api/v1/crates/thiserror-impl/1.0.34/download",
+        name = "remote_no_deps__thiserror_impl__1_0_37",
+        url = "https://crates.io/api/v1/crates/thiserror-impl/1.0.37/download",
         type = "tar.gz",
-        strip_prefix = "thiserror-impl-1.0.34",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.thiserror-impl-1.0.34.bazel"),
+        strip_prefix = "thiserror-impl-1.0.37",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.thiserror-impl-1.0.37.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__unicode_ident__1_0_3",
-        url = "https://crates.io/api/v1/crates/unicode-ident/1.0.3/download",
+        name = "remote_no_deps__unicode_ident__1_0_5",
+        url = "https://crates.io/api/v1/crates/unicode-ident/1.0.5/download",
         type = "tar.gz",
-        strip_prefix = "unicode-ident-1.0.3",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.unicode-ident-1.0.3.bazel"),
+        strip_prefix = "unicode-ident-1.0.5",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.unicode-ident-1.0.5.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__unicode_width__0_1_9",
-        url = "https://crates.io/api/v1/crates/unicode-width/0.1.9/download",
+        name = "remote_no_deps__unicode_width__0_1_10",
+        url = "https://crates.io/api/v1/crates/unicode-width/0.1.10/download",
         type = "tar.gz",
-        strip_prefix = "unicode-width-0.1.9",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.unicode-width-0.1.9.bazel"),
+        strip_prefix = "unicode-width-0.1.10",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.unicode-width-0.1.10.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__unicode_xid__0_2_3",
-        url = "https://crates.io/api/v1/crates/unicode-xid/0.2.3/download",
+        name = "remote_no_deps__unicode_xid__0_2_4",
+        url = "https://crates.io/api/v1/crates/unicode-xid/0.2.4/download",
         type = "tar.gz",
-        strip_prefix = "unicode-xid-0.2.3",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.unicode-xid-0.2.3.bazel"),
+        strip_prefix = "unicode-xid-0.2.4",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.unicode-xid-0.2.4.bazel"),
     )
 
     maybe(
@@ -652,65 +652,65 @@ def remote_no_deps_fetch_remote_crates():
 
     maybe(
         http_archive,
-        name = "remote_no_deps__wasm_bindgen__0_2_82",
-        url = "https://crates.io/api/v1/crates/wasm-bindgen/0.2.82/download",
+        name = "remote_no_deps__wasm_bindgen__0_2_83",
+        url = "https://crates.io/api/v1/crates/wasm-bindgen/0.2.83/download",
         type = "tar.gz",
-        strip_prefix = "wasm-bindgen-0.2.82",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.wasm-bindgen-0.2.82.bazel"),
+        strip_prefix = "wasm-bindgen-0.2.83",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.wasm-bindgen-0.2.83.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__wasm_bindgen_backend__0_2_82",
-        url = "https://crates.io/api/v1/crates/wasm-bindgen-backend/0.2.82/download",
+        name = "remote_no_deps__wasm_bindgen_backend__0_2_83",
+        url = "https://crates.io/api/v1/crates/wasm-bindgen-backend/0.2.83/download",
         type = "tar.gz",
-        strip_prefix = "wasm-bindgen-backend-0.2.82",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.wasm-bindgen-backend-0.2.82.bazel"),
+        strip_prefix = "wasm-bindgen-backend-0.2.83",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.wasm-bindgen-backend-0.2.83.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__wasm_bindgen_futures__0_4_32",
-        url = "https://crates.io/api/v1/crates/wasm-bindgen-futures/0.4.32/download",
+        name = "remote_no_deps__wasm_bindgen_futures__0_4_33",
+        url = "https://crates.io/api/v1/crates/wasm-bindgen-futures/0.4.33/download",
         type = "tar.gz",
-        strip_prefix = "wasm-bindgen-futures-0.4.32",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.wasm-bindgen-futures-0.4.32.bazel"),
+        strip_prefix = "wasm-bindgen-futures-0.4.33",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.wasm-bindgen-futures-0.4.33.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__wasm_bindgen_macro__0_2_82",
-        url = "https://crates.io/api/v1/crates/wasm-bindgen-macro/0.2.82/download",
+        name = "remote_no_deps__wasm_bindgen_macro__0_2_83",
+        url = "https://crates.io/api/v1/crates/wasm-bindgen-macro/0.2.83/download",
         type = "tar.gz",
-        strip_prefix = "wasm-bindgen-macro-0.2.82",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.wasm-bindgen-macro-0.2.82.bazel"),
+        strip_prefix = "wasm-bindgen-macro-0.2.83",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.wasm-bindgen-macro-0.2.83.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__wasm_bindgen_macro_support__0_2_82",
-        url = "https://crates.io/api/v1/crates/wasm-bindgen-macro-support/0.2.82/download",
+        name = "remote_no_deps__wasm_bindgen_macro_support__0_2_83",
+        url = "https://crates.io/api/v1/crates/wasm-bindgen-macro-support/0.2.83/download",
         type = "tar.gz",
-        strip_prefix = "wasm-bindgen-macro-support-0.2.82",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.wasm-bindgen-macro-support-0.2.82.bazel"),
+        strip_prefix = "wasm-bindgen-macro-support-0.2.83",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.wasm-bindgen-macro-support-0.2.83.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__wasm_bindgen_shared__0_2_82",
-        url = "https://crates.io/api/v1/crates/wasm-bindgen-shared/0.2.82/download",
+        name = "remote_no_deps__wasm_bindgen_shared__0_2_83",
+        url = "https://crates.io/api/v1/crates/wasm-bindgen-shared/0.2.83/download",
         type = "tar.gz",
-        strip_prefix = "wasm-bindgen-shared-0.2.82",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.wasm-bindgen-shared-0.2.82.bazel"),
+        strip_prefix = "wasm-bindgen-shared-0.2.83",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.wasm-bindgen-shared-0.2.83.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__web_sys__0_3_59",
-        url = "https://crates.io/api/v1/crates/web-sys/0.3.59/download",
+        name = "remote_no_deps__web_sys__0_3_60",
+        url = "https://crates.io/api/v1/crates/web-sys/0.3.60/download",
         type = "tar.gz",
-        strip_prefix = "web-sys-0.3.59",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.web-sys-0.3.59.bazel"),
+        strip_prefix = "web-sys-0.3.60",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.web-sys-0.3.60.bazel"),
     )
 
     maybe(
@@ -787,54 +787,72 @@ def remote_no_deps_fetch_remote_crates():
 
     maybe(
         http_archive,
-        name = "remote_no_deps__windows_sys__0_36_1",
-        url = "https://crates.io/api/v1/crates/windows-sys/0.36.1/download",
+        name = "remote_no_deps__windows_sys__0_42_0",
+        url = "https://crates.io/api/v1/crates/windows-sys/0.42.0/download",
         type = "tar.gz",
-        strip_prefix = "windows-sys-0.36.1",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.windows-sys-0.36.1.bazel"),
+        strip_prefix = "windows-sys-0.42.0",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.windows-sys-0.42.0.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__windows_aarch64_msvc__0_36_1",
-        url = "https://crates.io/api/v1/crates/windows_aarch64_msvc/0.36.1/download",
+        name = "remote_no_deps__windows_aarch64_gnullvm__0_42_0",
+        url = "https://crates.io/api/v1/crates/windows_aarch64_gnullvm/0.42.0/download",
         type = "tar.gz",
-        strip_prefix = "windows_aarch64_msvc-0.36.1",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.windows_aarch64_msvc-0.36.1.bazel"),
+        strip_prefix = "windows_aarch64_gnullvm-0.42.0",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.windows_aarch64_gnullvm-0.42.0.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__windows_i686_gnu__0_36_1",
-        url = "https://crates.io/api/v1/crates/windows_i686_gnu/0.36.1/download",
+        name = "remote_no_deps__windows_aarch64_msvc__0_42_0",
+        url = "https://crates.io/api/v1/crates/windows_aarch64_msvc/0.42.0/download",
         type = "tar.gz",
-        strip_prefix = "windows_i686_gnu-0.36.1",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.windows_i686_gnu-0.36.1.bazel"),
+        strip_prefix = "windows_aarch64_msvc-0.42.0",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.windows_aarch64_msvc-0.42.0.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__windows_i686_msvc__0_36_1",
-        url = "https://crates.io/api/v1/crates/windows_i686_msvc/0.36.1/download",
+        name = "remote_no_deps__windows_i686_gnu__0_42_0",
+        url = "https://crates.io/api/v1/crates/windows_i686_gnu/0.42.0/download",
         type = "tar.gz",
-        strip_prefix = "windows_i686_msvc-0.36.1",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.windows_i686_msvc-0.36.1.bazel"),
+        strip_prefix = "windows_i686_gnu-0.42.0",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.windows_i686_gnu-0.42.0.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__windows_x86_64_gnu__0_36_1",
-        url = "https://crates.io/api/v1/crates/windows_x86_64_gnu/0.36.1/download",
+        name = "remote_no_deps__windows_i686_msvc__0_42_0",
+        url = "https://crates.io/api/v1/crates/windows_i686_msvc/0.42.0/download",
         type = "tar.gz",
-        strip_prefix = "windows_x86_64_gnu-0.36.1",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.windows_x86_64_gnu-0.36.1.bazel"),
+        strip_prefix = "windows_i686_msvc-0.42.0",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.windows_i686_msvc-0.42.0.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "remote_no_deps__windows_x86_64_msvc__0_36_1",
-        url = "https://crates.io/api/v1/crates/windows_x86_64_msvc/0.36.1/download",
+        name = "remote_no_deps__windows_x86_64_gnu__0_42_0",
+        url = "https://crates.io/api/v1/crates/windows_x86_64_gnu/0.42.0/download",
         type = "tar.gz",
-        strip_prefix = "windows_x86_64_msvc-0.36.1",
-        build_file = Label("//remote/no_deps/cargo/remote:BUILD.windows_x86_64_msvc-0.36.1.bazel"),
+        strip_prefix = "windows_x86_64_gnu-0.42.0",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.windows_x86_64_gnu-0.42.0.bazel"),
+    )
+
+    maybe(
+        http_archive,
+        name = "remote_no_deps__windows_x86_64_gnullvm__0_42_0",
+        url = "https://crates.io/api/v1/crates/windows_x86_64_gnullvm/0.42.0/download",
+        type = "tar.gz",
+        strip_prefix = "windows_x86_64_gnullvm-0.42.0",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.windows_x86_64_gnullvm-0.42.0.bazel"),
+    )
+
+    maybe(
+        http_archive,
+        name = "remote_no_deps__windows_x86_64_msvc__0_42_0",
+        url = "https://crates.io/api/v1/crates/windows_x86_64_msvc/0.42.0/download",
+        type = "tar.gz",
+        strip_prefix = "windows_x86_64_msvc-0.42.0",
+        build_file = Label("//remote/no_deps/cargo/remote:BUILD.windows_x86_64_msvc-0.42.0.bazel"),
     )

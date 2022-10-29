@@ -76,7 +76,7 @@ rust_library(
     # buildifier: leave-alone
     deps = [
         ":quote_build_script",
-        "@remote_no_deps__proc_macro2__1_0_43//:proc_macro2",
+        "@remote_no_deps__proc_macro2__1_0_47//:proc_macro2",
     ],
 )
 
