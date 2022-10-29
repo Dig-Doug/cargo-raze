@@ -2,6 +2,7 @@
 name = "no_deps"
 version = "0.1.0"
 authors = ["UebelAndre <github@uebelandre.com>"]
+edition = "2021"
 
 [[bin]]
 name = "no_deps"
@@ -13,3 +14,6 @@ genmode = "Remote"
 gen_workspace_prefix = "remote_no_deps"
 package_aliases_dir = "cargo"
 default_gen_buildrs = true
+
+[dependencies]
+wgpu = "0.13.1"

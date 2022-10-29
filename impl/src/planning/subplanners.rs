@@ -404,6 +404,13 @@ impl<'planner> CrateSubplanner<'planner> {
       is_workspace_member_dependency,
       is_binary_dependency,
       is_proc_macro,
+        all_aliases: default_deps
+            .aliased_dependencies
+            .values()
+            .chain(targeted_deps.iter().flat_map(|t| t.deps.aliased_dependencies.values()))
+            .cloned()
+            .unique()
+            .collect(),
       default_deps,
       targeted_deps,
       workspace_path_to_crate: self.crate_catalog_entry.workspace_path(self.settings)?,
